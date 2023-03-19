@@ -25,6 +25,7 @@ public class DataController {
     @GetMapping("add")
     public String xyz() throws IOException {
         OkHttpClient client = new OkHttpClient().newBuilder().build();
+
         LocalDate localDate = LocalDate.parse("2023-03-14");
 
         int a = 30;
