@@ -10,6 +10,7 @@ import java.util.List;
 @Repository
 public interface DataRepository extends JpaRepository<Data, Integer> {
 
+
     @Query(value = "select distinct(local_date) from cash", nativeQuery = true)
     List<String> getDates();
     @Query(value = "select price from cash where currency=:curr", nativeQuery = true)

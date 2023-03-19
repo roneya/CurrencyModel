@@ -32,6 +32,7 @@ public class DataController {
 
         while(a>0)
         {
+
             Request request = new Request.Builder()
                     .url("https://api.apilayer.com/exchangerates_data/"+localDate.toString()+"?symbols=EUR%2C%20JPY%2C%20GBP%2C%20CAD%2C%20AUD%2C%20CNY%2C%20CHF%2C%20KRW%2C%20MXN%2C%20INR%2C%20RUB%2C%20TRY%2C%20BRL%2C%20ZAR%2C%20SAR%2C%20IDR%2C%20PLN%2C%20ARS&base=USD")
                     .addHeader("apikey", "Mksw9ks2iIzWsAS63TbDbjPOxwf8nHUI")

@@ -20,6 +20,7 @@ public class Data {
     public Data() {
     }
 
+
     public int getId() {
         return id;
     }
